@@ -4,14 +4,14 @@ import './index.css';
 import Header from './Components/Layout/Header';
 import Footer from './Components/Layout/Footer';
 // import AddTaskForm from './Components/AddTaskForm';
-import TaskList from './Components/TaskList';
+// import TaskList from './Components/TaskList';
 
 const App = () => {
   return (
     <div>
       <Header/>
       {/* <AddTaskForm/> */}
-      <TaskList/>
+      {/* <TaskList/> */}
       <Footer/>
     </div>
   );
