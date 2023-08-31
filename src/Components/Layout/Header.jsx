@@ -10,6 +10,7 @@ import lightMode from "../Assets/sun-mode.png";
 
 //files
 import Login from "./Login";
+import AddTaskForm from "../AddTaskForm";
 
 const Header = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -26,6 +27,7 @@ const Header = () => {
   const backgroundImage = theme === "dark" ? darkBg : lightBg;
 
   return (
+    <div>
     <div
       className="flex items-center justify-between px-2 py-20"
       style={{
@@ -49,6 +51,12 @@ const Header = () => {
         />
       </button>
     </div>
+    <div className="absolute inset-x-0 top-8/5 transform -translate-y-1/2">
+        
+    <AddTaskForm />
+  
+</div>
+</div>
   );
 };
 
