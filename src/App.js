@@ -1,10 +1,18 @@
 import React from 'react';
 import './index.css';
 
+import Header from './Components/Layout/Header';
+import Footer from './Components/Layout/Footer';
+import AddTaskForm from './Components/AddTaskForm';
+import TaskList from './Components/TaskList';
+
 const App = () => {
   return (
-    <div className="bg-blue-300 text-white p-4">
-      Welcome to My Tailwind CSS App
+    <div>
+      <Header/>
+      <AddTaskForm/>
+      <TaskList/>
+      <Footer/>
     </div>
   );
 };
